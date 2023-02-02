@@ -1,22 +1,18 @@
-s = 'III'
-
-
+s = 'IVI'
 
 def romanToInt(s):
     romanInt = 0
     romanArray = list(s)
+    length = len(romanArray)
 
-    for i in romanArray:
-        if i == 'I':
+    for i in range(length):
+        if romanArray[i] == 'I':
             romanInt += 1
-            print(i)
-        else:
-            romanInt += 1
-        if i == 'V':
+        if romanArray[i] == 'V':
             romanInt += 5
-        if i == 'X':
+        if romanArray[i] == 'X':
             romanInt += 10
-        if i == 'L':
+        if romanArray[i] == 'L':
             romanInt += 50
 
     print(romanInt)
