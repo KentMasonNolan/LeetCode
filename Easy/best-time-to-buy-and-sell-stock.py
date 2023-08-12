@@ -5,6 +5,8 @@ class Solution(object):
         :rtype: int
         """
 
+        # Completed baby
+
         leftPointer, rightPointer = 0, 1
         maxProfit = 0
 
